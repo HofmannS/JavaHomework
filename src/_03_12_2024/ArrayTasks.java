@@ -1,5 +1,7 @@
 package _03_12_2024;
 
+import java.util.Arrays;
+
 public class ArrayTasks {
 
     // 1. Найти сумму элементов массива.
@@ -130,19 +132,19 @@ public class ArrayTasks {
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
         }
-        System.out.println(sum/ array.length);
+        System.out.println(sum / array.length);
     }
 
     // 12. Вывести все элементы массива, которые больше среднего значения.
     public static void task12() {
         int[] array = {1, 2, 3, 4};
         int sum = 0;
-        for (int i = 0; i < ; i++) {
+        for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
         }
-        int avg = sum/ array.length;
+        int avg = sum / array.length;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] > avg){
+            if (array[i] > avg) {
                 System.out.println(array[i]);
             }
         }
@@ -152,9 +154,9 @@ public class ArrayTasks {
     public static void task13() {
         int[] array = {1, 2, 3, 4};
         for (int i = 0; i < array.length; i++) {
-            if(array[i] > array[i+1]){
+            if (array[i] > array[i + 1]) {
                 System.out.println("Не упорядочен");
-            }else{
+            } else {
                 System.out.println("Упорядочен");
             }
         }
@@ -166,11 +168,11 @@ public class ArrayTasks {
         int min = array[0];
         int secMin = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i] < min){
+            if (array[i] < min) {
                 secMin = min;
                 min = array[i];
             }
-            if (array[i] < secMin && array[i] > min){
+            if (array[i] < secMin && array[i] > min) {
                 secMin = array[i];
             }
         }
@@ -180,5 +182,12 @@ public class ArrayTasks {
     // 15. Переставить элементы массива в обратном порядке.
     public static void task15() {
         int[] array = {1, 2, 3, 4};
+        int temp;
+        for (int i = 0; i < array.length / 2; i++) {
+            temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = temp;
+        }
+        System.out.println(Arrays.toString(array));
     }
 }
