@@ -2,7 +2,7 @@ package _03_12_2024;
 
 import java.util.Arrays;
 
-public class ArrayTasks {
+public class ArrayTasksFrom1to15 {
 
     // 1. Найти сумму элементов массива.
     public static void task1() {

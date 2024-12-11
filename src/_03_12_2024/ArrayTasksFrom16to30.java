@@ -2,7 +2,7 @@ package _03_12_2024;
 
 import java.util.Arrays;
 
-public class ArrayTasksExtended {
+public class ArrayTasksFrom16to30 {
 
     // 16. Найти все пары элементов, сумма которых равна заданному числу.
     public static void task16() {
@@ -213,20 +213,20 @@ public class ArrayTasksExtended {
         int[] newArray = new int[array.length];
         int count = 0;
         for (int i = 0; i < array.length; i++) {
-            boolean dubl = false;
+            boolean hasDublicate = false;
             for (int j = 0; j < count; j++) {
                 if (array[i] == newArray[j]) {
-                    dubl = true;
+                    hasDublicate = true;
                     break;
                 }
             }
-            if (!dubl) {
+            if (!hasDublicate) {
                 newArray[count++] = array[i];
             }
 
         }
-        int[] ar3 = Arrays.copyOf(newArray, count);
-        System.out.println(Arrays.toString(ar3));
+        int[] uniqueElementsArray = Arrays.copyOf(newArray, count);
+        System.out.println(Arrays.toString(uniqueElementsArray));
     }
 
     public static void main(String[] args) {
