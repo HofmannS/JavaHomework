@@ -1,19 +1,19 @@
 package _09_12_2024;
 
-public class Employee {
+public class Employ {
     int id;
     String name;
     String department;
     double salary;
 
-    public Employee(int id, String name, String department, double salary) {
+    public Employ(int id, String name, String department, double salary) {
         this.id = id;
         this.name = name;
         this.department = department;
         this.salary = salary;
     }
 
-    public Employee() {
+    public Employ() {
     }
 
     public String convertSalaryToString(double salary) {

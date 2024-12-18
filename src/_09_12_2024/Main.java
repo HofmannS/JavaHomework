@@ -2,8 +2,8 @@ package _09_12_2024;
 
 public class Main {
     public static void main(String[] args) {
-        Employee emp = new Employee();
-        Employee emp1 = new Employee();
+        Employ emp = new Employ();
+        Employ emp1 = new Employ();
         int x = 9;
 
         emp.id = 1;
